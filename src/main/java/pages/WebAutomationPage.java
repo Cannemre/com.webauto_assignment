@@ -58,7 +58,7 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Nested Iframe")
     private WebElement nestedIframeLink;
 
-    @FindBy (linkText = "Normal Iframe")
+    @FindBy(linkText = "Normal Iframe")
     private WebElement normalIframeLink;
 
     @FindBy(linkText = "Alerts")
@@ -66,6 +66,36 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Animate")
     private WebElement animateLink;
+
+    @FindBy(linkText = "Progress Bar")
+    private WebElement progressBar;
+
+    @FindBy(linkText = "Download Dialog")
+    private WebElement downloadDialog;
+
+    @FindBy(linkText = "Datepicker")
+    private WebElement datePicker;
+
+    @FindBy(linkText = "Display Multiple Months")
+    private WebElement displayMultipleMonths;
+
+    @FindBy(linkText = "Accent Folding")
+    private WebElement accentFolding;
+
+    @FindBy(linkText = "Select Date Range")
+    private WebElement selectDateRange;
+
+    @FindBy (linkText = "Control Group")
+    private WebElement controlGroup;
+
+    @FindBy(linkText = "Toolbar")
+    private WebElement toolbar;
+
+    @FindBy(linkText = "Dialog")
+    private WebElement dialog;
+
+    @FindBy(linkText = "Modal Form")
+    private WebElement modalForm;
 
     public void clickOnDraggableLink() {
         draggableLink.click();
@@ -157,5 +187,45 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnRevertDragPositionLink() {
         revertDragPositionLink.click();
+    }
+
+    public void clickOnProgressBarLink() {
+        progressBar.click();
+    }
+
+    public void clickOnDownloadDialogLink() {
+        downloadDialog.click();
+    }
+
+    public void clickOnDatePickerLink() {
+        datePicker.click();
+    }
+
+    public void clickOnDisplayMultipleMonths() {
+        displayMultipleMonths.click();
+    }
+
+    public void clickOnAccentFoldingLink() {
+        accentFolding.click();
+    }
+
+    public void clickOnSelectDateRangeLink() {
+        selectDateRange.click();
+    }
+
+    public void clickOnToolbarLink() {
+        toolbar.click();
+    }
+
+    public void clickOnControlGroupLink() {
+        controlGroup.click();
+    }
+
+    public void clickOnDialogLink() {
+        dialog.click();
+    }
+
+    public void clickOnModalFormLink() {
+        modalForm.click();
     }
 }

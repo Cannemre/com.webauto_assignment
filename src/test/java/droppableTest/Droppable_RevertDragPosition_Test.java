@@ -12,7 +12,7 @@ import utils.BrowserUtils;
  * 4. Drag the first draggable element to box
  * 5. Verify first element is reverted
  * 6. Drag the second draggable element to box
- * 7. Verify first element is not reverted
+ * 7. Verify second element is not reverted
  */
 
 public class Droppable_RevertDragPosition_Test extends Hooks {

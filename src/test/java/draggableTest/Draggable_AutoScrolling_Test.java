@@ -1,4 +1,4 @@
-package draggableTests;
+package draggableTest;
 
 import BaseTest.Hooks;
 import org.assertj.core.api.Assertions;

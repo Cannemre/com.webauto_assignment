@@ -3,7 +3,12 @@ package utils;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
+import pages.autoComplete.AccentFolding_Page;
 import pages.autoComplete.MultipleAndRemote_Page;
+import pages.controlGroup.Toolbar_Page;
+import pages.datePicker.DisplayMultipleMonths_Page;
+import pages.datePicker.SelectDateRange_Page;
+import pages.dialog.ModalForm_Page;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovement_Page;
 import pages.draggable.Draggable_DefFunc_Page;
@@ -12,6 +17,7 @@ import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.Droppable_RevertDragPosition_Page;
 import pages.iframe.NestedIframe_Page;
 import pages.iframe.NormalIframe_Page;
+import pages.progressBar.ProgressBar_DownloadDialog_Page;
 import pages.resizable.Animate_Page;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.resizable.SynchronousResize_Page;
@@ -45,6 +51,8 @@ public class Pages {
 
     private MultipleAndRemote_Page multipleAndRemotePage;
 
+    private ProgressBar_DownloadDialog_Page progressBarDownloadDialogPage;
+
     private Resizable_DefFunc_Page resizableDefFuncPage;
 
     private Selectable_DefFunc_Page selectableDefFuncPage;
@@ -56,6 +64,16 @@ public class Pages {
     private Textarea_Page textareaPage;
 
     private WebAutomationPage webAutomationPage;
+
+    private DisplayMultipleMonths_Page displayMultipleMonthsPage;
+
+    private AccentFolding_Page accentFoldingPage;
+
+    private SelectDateRange_Page selectDateRangePage;
+
+    private Toolbar_Page toolbarPage;
+
+    private ModalForm_Page modalFormPage;
 
     public Pages() {
         homePage = new HomePage();
@@ -76,6 +94,12 @@ public class Pages {
         textareaPage = new Textarea_Page();
         selectableSerializePage = new Selectable_Serialize_Page();
         normalIframePage = new NormalIframe_Page();
+        progressBarDownloadDialogPage = new ProgressBar_DownloadDialog_Page();
+        displayMultipleMonthsPage = new DisplayMultipleMonths_Page();
+        accentFoldingPage = new AccentFolding_Page();
+        selectDateRangePage = new SelectDateRange_Page();
+        toolbarPage = new Toolbar_Page();
+        modalFormPage = new ModalForm_Page();
 
     }
 
@@ -148,4 +172,16 @@ public class Pages {
     public Selectable_Serialize_Page getSelectableSerializePage() {
         return selectableSerializePage;
     }
+
+    public ProgressBar_DownloadDialog_Page getProgressBarDownloadDialogPage() {return progressBarDownloadDialogPage;}
+
+    public DisplayMultipleMonths_Page getDisplayMultipleMonthsPage() {return displayMultipleMonthsPage;}
+
+    public AccentFolding_Page getAccentFoldingPage() {return accentFoldingPage;}
+
+    public SelectDateRange_Page getSelectDateRangePage() {return selectDateRangePage;}
+
+    public Toolbar_Page getToolbarPage() {return toolbarPage;}
+
+    public ModalForm_Page getModalFormPage() {return modalFormPage;}
 }
