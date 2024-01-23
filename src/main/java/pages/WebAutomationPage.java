@@ -97,6 +97,12 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Modal Form")
     private WebElement modalForm;
 
+    @FindBy(linkText = "Menu")
+    private WebElement menu;
+
+    @FindBy(linkText = "Icons")
+    private WebElement icons;
+
     public void clickOnDraggableLink() {
         draggableLink.click();
     }
@@ -227,5 +233,17 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnModalFormLink() {
         modalForm.click();
+    }
+
+    public void clickOnMenuLink() {
+        menu.click();
+    }
+
+    public void clickOnIconsLink() {
+        icons.click();
+    }
+
+    public void clickOnHandlesLink() {
+        handlesLink.click();
     }
 }

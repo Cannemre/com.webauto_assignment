@@ -12,11 +12,13 @@ import pages.dialog.ModalForm_Page;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovement_Page;
 import pages.draggable.Draggable_DefFunc_Page;
+import pages.draggable.Handles_Page;
 import pages.droppable.Droppable_Accept_Page;
 import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.Droppable_RevertDragPosition_Page;
 import pages.iframe.NestedIframe_Page;
 import pages.iframe.NormalIframe_Page;
+import pages.menu.Icons_Page;
 import pages.progressBar.ProgressBar_DownloadDialog_Page;
 import pages.resizable.Animate_Page;
 import pages.resizable.Resizable_DefFunc_Page;
@@ -36,6 +38,8 @@ public class Pages {
     private ConstrainMovement_Page constrainMovementPage;
 
     private Draggable_DefFunc_Page draggableDefFuncPage;
+
+    private Handles_Page handlesPage;
 
     private Droppable_DefFunc_Page droppableDefFuncPage;
 
@@ -75,6 +79,8 @@ public class Pages {
 
     private ModalForm_Page modalFormPage;
 
+    private Icons_Page iconsPage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -100,7 +106,8 @@ public class Pages {
         selectDateRangePage = new SelectDateRange_Page();
         toolbarPage = new Toolbar_Page();
         modalFormPage = new ModalForm_Page();
-
+        iconsPage = new Icons_Page();
+        handlesPage = new Handles_Page();
     }
 
     public HomePage getHomePage() {
@@ -184,4 +191,8 @@ public class Pages {
     public Toolbar_Page getToolbarPage() {return toolbarPage;}
 
     public ModalForm_Page getModalFormPage() {return modalFormPage;}
+
+    public Icons_Page getIconsPage() {return iconsPage;}
+
+    public Handles_Page getHandlesPage() {return handlesPage;}
 }
